@@ -94,6 +94,9 @@ x = (1, 2, 3); this will prit 3 because 3 is the rightmost int the comma list. T
         first = first + 1;
         break;
     }
+    printf("%zu is the size of the first value\n", sizeof(first));
+    printf("%zu is the size of the second value\n", sizeof(second));
+    printf("This is because both the values are integers and integers typically have a size of 4\n");
     printf("End of the program\n");
     return 0;
  }
