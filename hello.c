@@ -19,7 +19,7 @@ The <stdio.h> is actually callled theh standard input output or standard i/o whi
 // and then to execute the compiled program, use ./hello(or the name of your program)
 // the -o just means 'output to this file' so the file we want to output to is called hello in this case
 int main() {
-    printf("Hello World"); // This is where the program actually runs
+    printf("Hello World\n"); // This is where the program actually runs
     // The printf is the command to actually show us 
 
     return 0;
