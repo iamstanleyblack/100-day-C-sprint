@@ -136,13 +136,19 @@ int response;
 int county;
 printf("How old are you? \n");
 scanf("%d", &age);
+printf("---------------------------------\n");
 if (age < 18){
+    printf("What number is you county? \n");
+    scanf("%d", &county);
+    printf("--------------------------------\n");
     if(county < 40){
         printf("Dear User, Your age and location do not meet the criteria. Try again after some years\n");
+        printf("-------------------------------------\n");
 
     }
     else{
-        printf("Please visit any registration office near you and seek for assistance\n");
+        printf("Please visit any registration office near you to seek for assistance\n");
+        printf("------------------------------------------\n");
         //break;
     }
 }
@@ -153,6 +159,7 @@ else{
 printf("Rate the quality of service: \n");
 printf("1. #####\n2. ####\n3. ###\n4. ##\n5. I was not assisted\n.");
 scanf("%d", &response);
+printf("------------------------------\n");
 switch(response){
 case 1:
 printf("Thank you so much\n");
