@@ -52,5 +52,15 @@ int main(){
     return 0;
 }
 
-*/
 
+#include<stdio.h>
+int main() {
+    int i = 10;
+    printf("The value of i is %d\n", i);
+    printf("And its address is %p\n", (void *)&i);// dont worry about (the void *). i will be learnign that later
+    return 0;
+}
+
+the number printed as the address is tha location of i/ the pointer to i. it is a pointer because it lets me know where i is in memory. Like a home address written o a scrap paper tells ;you where you can find a particular house, this number indicates to us where in memory we can find the value of i
+
+*/
