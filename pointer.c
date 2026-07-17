@@ -9,7 +9,6 @@ So, ptr is a pointer holding someVariable's address
 &someVarialbe - the ampersand(&) operator fetches the address of someVariable
 ptr - This is a new vairable declared with * whose value it that address
 *ptr - This is dereferencing ptr which gets you back the value at that address(3)
-*/
 
 #include<stdio.h>
 int main(){
@@ -28,4 +27,30 @@ int main(){
     return 0;
 }
 
+Just like an int variable can hold the value 12, a pointer variable can hold the address of data
+All the stuff below therefore mean the same thing:
+Index into memory == address == location
+
+
+And so a pointer variable holds that address number just like a float variable might hold 3.14159
+
+
+#include<stdio.h>
+int main(){
+    int someVariable = 23;
+    int *someVariablesPointer = &someVariable;
+
+    printf("Some Variable's value is %d\n", someVariable);
+
+    printf("The address where some variable lives in is %p\n", someVariablesPointer); // notice i used a %p here which prints a pointer
+
+    printf("In order to dereference the pointer value we use the * symbol in the printf\n");
+
+    printf("Like this *someVariable and so we have %d\n", *someVariablesPointer);
+
+
+    return 0;
+}
+
+*/
 
