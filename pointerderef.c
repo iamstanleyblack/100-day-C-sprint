@@ -131,7 +131,6 @@ you should never have more items in your initializer than there is room for in t
 HOwever, you can have fewer items in your initializer than there is room for in the array. and the remaining elements in the array will be automatically initialized with a zero
 
  we can also set specific array elements  in the initializer to zero by specifying an index for the value. When we do this C will kepp initializing subsequent values for you until the initializer runs out, filling everything else with 0.
-    */
 
     #include<stdio.h>
     int main() {
@@ -141,3 +140,39 @@ HOwever, you can have fewer items in your initializer than there is room for in 
         }
         return 0;
     }
+
+    This is what will be printed {
+        It is 22
+It is 0
+It is 0
+It is 55
+It is 66
+It is 77
+It is 0
+It is 0
+    }
+
+we cn put simple constant epressions in there as well  like: 
+#define COUNT 5
+int a[COUNT] = {[COUNT-3]=3,2,1};
+// tHIS WILL GIVE Us 0,0,3,2,1 meaning we will start initializing the provided values fromt he 3rd value till the end
+
+//Out of bound eleements. C will not stop you from accessign values that are out of bounds
+for example
+    */
+    #include<stdio.h>
+    int main() {
+        int i;
+        int a[5] = {22, 37, 3490, 18, 95};
+        for (i = 0; i < 10; i++) {
+            printf("%d\n", a[i]);
+        }
+    }
+// this is what is printed: 3490
+18
+95
+0
+-1672077312
+1982566531
+-1310755488
+32764
