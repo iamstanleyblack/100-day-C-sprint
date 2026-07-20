@@ -182,7 +182,6 @@ accessing values outside of the available allocated room results in to this unde
 //Multidimenional arrays
 we can add as many dimensions as we want to in our arrays
 how we initialize a 2d array?j
-    */
 #include<stdio.h>
 int main(){
     int row;
@@ -197,3 +196,5 @@ int main(){
         }
     }
 }
+
+    */
