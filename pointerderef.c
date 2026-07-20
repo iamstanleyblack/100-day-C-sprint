@@ -159,7 +159,6 @@ int a[COUNT] = {[COUNT-3]=3,2,1};
 
 //Out of bound eleements. C will not stop you from accessign values that are out of bounds
 for example
-    */
     #include<stdio.h>
     int main() {
         int i;
@@ -176,3 +175,25 @@ for example
 1982566531
 -1310755488
 32764
+
+
+accessing values outside of the available allocated room results in to this undefined behaviour
+
+//Multidimenional arrays
+we can add as many dimensions as we want to in our arrays
+how we initialize a 2d array?j
+    */
+#include<stdio.h>
+int main(){
+    int row;
+    int col;
+    int a[2][5] = {
+        {0, 1, 2, 3, 4},
+        {5, 6, 7, 8, 9}
+    };
+    for(row = 0; row < 2; row++){
+        for (col = 0; col < 5; col++){
+            printf("%d, %d) = %d\n", row, col, a[row][col]);
+        }
+    }
+}
