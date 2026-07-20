@@ -115,7 +115,6 @@ if an int is 4 bytes and the arry is 32 bytes then there must be rroom for 8 int
 ARRAY INITIALIZERS
 
 
-*/
 #include<stdio.h>
 int main(void)
 {
@@ -126,3 +125,19 @@ int main(void)
         printf("%d\n", a[i]);
     }
 }
+
+you should never have more items in your initializer than there is room for in the array. ie if we have allocated 5 then the initialized values should be only 5 values
+
+HOwever, you can have fewer items in your initializer than there is room for in the array. and the remaining elements in the array will be automatically initialized with a zero
+
+ we can also set specific array elements  in the initializer to zero by specifying an index for the value. When we do this C will kepp initializing subsequent values for you until the initializer runs out, filling everything else with 0.
+    */
+
+    #include<stdio.h>
+    int main() {
+        int a[10] = {0, 11, 22, [5]=55,66,77};
+        for (int i = 0; i < 10; i++){
+            printf("It is %d\n", a[i]);
+        }
+        return 0;
+    }
