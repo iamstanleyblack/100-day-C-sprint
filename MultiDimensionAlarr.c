@@ -124,6 +124,11 @@ int main()
     printf("The string is %zu bytes long.\n", strlen(s));// the strlen() function will return type size_t which is an integer type so we cn use it for integer math. we print size_t with a %zu formatter
 }
 
+In C, a 'string' is defined by two basic characteristics:
+1. As a pointer to the first character in the string
+2. As a zero-valued byte somewhere in memory after the pointer that indicates the end of the string
+
+A NULL character can be written in C code as \0 though we dont oftenhave to do this
 
 
 */
