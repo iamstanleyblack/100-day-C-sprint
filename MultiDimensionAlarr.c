@@ -112,5 +112,5 @@ NB:/- If we have apoointer to a string literal, we shouldnt try to change it. If
     int main() {
         char t[] = "Hello Again!"; // t here is an array copy of the string
         t[0] = 'z'; 
-        printf("%")
+        printf("%s\n", t); // this will work
     }
