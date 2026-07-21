@@ -134,7 +134,6 @@ in C, if we want to make a copy of a string, we have to copy it a byte at a time
 
 
 
-*/
 #include<stdio.h>
 #include<string.h>
 int main() 
@@ -145,9 +144,10 @@ int main()
     // Now 't' has "Hello World" even though it had nothing inside it before
     t[0] = 'z'; // We now modify the "Hello World" that is now in t, not he one in s.
 
-    printf("%s\n", s); // this prints "Hello World" since it has not been modified
-    printf("%s\n", t); // This prints "zello World" since we only modified t
+    printf(" S remains unchanged and prints %s\n", s); // this prints "Hello World" since it has not been modified
+    printf("T has been changed and prints %s\n", t); // This prints "zello World" since we only modified t
     return 0;
 
     
 }
+*/
