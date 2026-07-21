@@ -76,4 +76,6 @@ int main(void)
 strings in C are  sequences of characters in double quotes
 we assign a string to a variable in C using char *s
 e.g. char *s = "Hello, World!";
+
+string variable 
 */
