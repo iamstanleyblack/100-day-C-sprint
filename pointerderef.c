@@ -152,7 +152,7 @@ It is 0
 It is 0
     }
 
-we cn put simple constant epressions in there as well  like: 
+we can put simple constant epressions in there as well  like: 
 #define COUNT 5
 int a[COUNT] = {[COUNT-3]=3,2,1};
 // tHIS WILL GIVE Us 0,0,3,2,1 meaning we will start initializing the provided values fromt he 3rd value till the end
