@@ -77,5 +77,5 @@ strings in C are  sequences of characters in double quotes
 we assign a string to a variable in C using char *s
 e.g. char *s = "Hello, World!";
 
-string variable 
+string variable 's' here is actually a pointer to the first character in that string, that is 'H'. To print the string we use the string format specifier that is %s
 */
