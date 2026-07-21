@@ -25,4 +25,6 @@ int main() {
     p = &a[0]; // p points to the array's first element
 
     printf("%d\n", *p); // this will print 11 since its the irst element(element 0)
+    // So, p = &a[0]; is the same as p = a;
+    // referring to the array name is the same as getting a pointer to the first element of the array!
 }
