@@ -30,11 +30,6 @@ int main() {
 
 // PASSING SINGLE DIMENSTIONAL ARRAYS TO FUNCTIONS
 
-
+if you pass an array to a function, you re passing a pointer to the first element in the array
+However, if the function has a pointer to the dats, it is able to manipulate that data! So changes that a function mkes to an array will be visible back out in the caller
 */
-#include<stdio.h>
-void times2(int *a, int len){
-    for (int i = 0; i < len; i++){
-        printf("%d\n", a[i] * 2);
-    }
-}
