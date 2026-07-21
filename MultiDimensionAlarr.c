@@ -116,7 +116,6 @@ NB:/- If we have apoointer to a string literal, we shouldnt try to change it. If
 
     to get the string length, we need to add a different header file called <string.h> and here we will be using a function called strlen()
 
-            */
 #include<stdio.h>
 #include<string.h>
 int main()
@@ -124,3 +123,7 @@ int main()
     char *s = "Hello World";
     printf("The string is %zu bytes long.\n", strlen(s));// the strlen() function will return type size_t which is an integer type so we cn use it for integer math. we print size_t with a %zu formatter
 }
+
+
+
+*/
