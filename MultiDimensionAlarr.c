@@ -50,7 +50,6 @@ return 0;
 // Passing Multidimensional Arrays to Functions
 
 
-*/
 #include<stdio.h>
 void print_2D_array(int a[2][3])
 {
@@ -72,3 +71,9 @@ int main(void)
     };
     print_2D_array(x);
 }
+
+// STRINGS
+strings in C are  sequences of characters in double quotes
+we assign a string to a variable in C using char *s
+e.g. char *s = "Hello, World!";
+*/
