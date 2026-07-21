@@ -85,7 +85,6 @@ int main() {
     return 0;
 }
 
-*/
 #include<stdio.h>
 int main() {
     char s[] = "Hello World!";
@@ -94,3 +93,4 @@ int main() {
         printf("\n");
     }
 }
+    */
