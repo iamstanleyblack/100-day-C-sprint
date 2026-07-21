@@ -14,6 +14,7 @@ for (row = 0; row < 2; row++){
         printf("(%d, %d) = %d\n", row, col, a[row][col]);    }
 }
 }
+*/
+
 // ARRAYS AND POINTERS
 
-*/
