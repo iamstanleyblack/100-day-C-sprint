@@ -96,4 +96,14 @@ int main() {
     // String initializers
     char *s = "Hello, World\n";
     char t[] = "Hello Again\n";
+#include<stdio.h>
+int main() {
+    char *s = "Hello World";
+
+    s[0] = 'z'; // we wil get an error here since we are trying to mutate a string literal
+    print(' %s\n', s);
+}
+
     */
+
+    
