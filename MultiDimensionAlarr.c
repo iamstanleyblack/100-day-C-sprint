@@ -132,6 +132,7 @@ A NULL character can be written in C code as \0 though we dont oftenhave to do t
 // Copying a string
 in C, if we want to make a copy of a string, we have to copy it a byte at a time meaning that we're going to take the individual bytes of the string from one plece in memory and duplicate them somewhere else in memory. and this is made easier using the strcpy() function
 
+*/
 
 
 #include<stdio.h>
@@ -151,5 +152,4 @@ int main()
     
 }
 
-With strcpy() function, the destination pointer is the first argument and the source pointer is the second argument
-*/
+//With strcpy() function, the destination pointer is the first argument and the source pointer is the second argument
