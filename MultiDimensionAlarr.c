@@ -78,4 +78,16 @@ we assign a string to a variable in C using char *s
 e.g. char *s = "Hello, World!";
 
 string variable 's' here is actually a pointer to the first character in that string, that is 'H'. To print the string we use the string format specifier that is %s
+#include<stdio.h>
+int main() {
+    char *s = "Hello World!\n";
+    printf("We are printing %s\n", s);
+    return 0;
+}
+
 */
+#include<stdio.h>
+int main() {
+    char s[14] = "Hello World!\n";
+    char s[] = "Hello World!";
+}
