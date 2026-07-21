@@ -17,4 +17,7 @@ for (row = 0; row < 2; row++){
 */
 
 // ARRAYS AND POINTERS
-
+#include<stdio.h>
+int main() {
+    int a[5] = {}
+}
