@@ -14,7 +14,6 @@ for (row = 0; row < 2; row++){
         printf("(%d, %d) = %d\n", row, col, a[row][col]);    }
 }
 }
-*/
 
 // ARRAYS AND POINTERS
 #include<stdio.h>
@@ -27,4 +26,15 @@ int main() {
     printf("%d\n", *p); // this will print 11 since its the irst element(element 0)
     // So, p = &a[0]; is the same as p = a;
     // referring to the array name is the same as getting a pointer to the first element of the array!
+}
+
+// PASSING SINGLE DIMENSTIONAL ARRAYS TO FUNCTIONS
+
+
+*/
+#include<stdio.h>
+void times2(int *a, int len){
+    for (int i = 0; i < len; i++){
+        printf("%d\n", a[i] * 2);
+    }
 }
