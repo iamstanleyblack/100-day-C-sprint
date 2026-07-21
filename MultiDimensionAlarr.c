@@ -104,6 +104,7 @@ int main() {
     print(' %s\n', s);
 }
 
+NB:/- If we have apoointer to a string literal, we shouldnt try to change it. If we use a string in double quotes to initialize an array then that is not actually a string literal
     */
 
     
