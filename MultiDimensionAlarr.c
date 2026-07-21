@@ -88,6 +88,9 @@ int main() {
 */
 #include<stdio.h>
 int main() {
-    char s[14] = "Hello World!\n";
     char s[] = "Hello World!";
+    for(int i = 0; i < 13; i++){
+        printf("%c", s[i]);
+        printf("\n");
+    }
 }
