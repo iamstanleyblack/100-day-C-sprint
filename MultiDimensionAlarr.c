@@ -150,4 +150,6 @@ int main()
 
     
 }
+
+With strcpy() function, the destination pointer is the first argument and the source pointer is the second argument
 */
