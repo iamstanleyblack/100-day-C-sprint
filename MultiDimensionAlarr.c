@@ -93,4 +93,7 @@ int main() {
         printf("\n");
     }
 }
+    // String initializers
+    char *s = "Hello, World\n";
+    char t[] = "Hello Again\n";
     */
