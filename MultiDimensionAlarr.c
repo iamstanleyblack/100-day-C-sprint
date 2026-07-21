@@ -19,5 +19,10 @@ for (row = 0; row < 2; row++){
 // ARRAYS AND POINTERS
 #include<stdio.h>
 int main() {
-    int a[5] = {}
+    int a[5] = {11, 22, 33, 44, 55};
+    int *p;
+
+    p = &a[0]; // p points to the array's first element
+
+    printf("%d\n", *p); // this will print 11 since its the irst element(element 0)
 }
