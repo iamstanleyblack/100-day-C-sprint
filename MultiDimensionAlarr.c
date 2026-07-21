@@ -33,3 +33,10 @@ int main() {
 if you pass an array to a function, you re passing a pointer to the first element in the array
 However, if the function has a pointer to the dats, it is able to manipulate that data! So changes that a function mkes to an array will be visible back out in the caller
 */
+
+#include<stdio.h>
+void double_array(int *a, int len)
+{
+    for(int i = 0; {1, 2, 3, 4, 5};
+    double_array)
+}
