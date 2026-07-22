@@ -55,7 +55,7 @@ struct car {
 };
 
 int main() {
-    struct car saturn = {.speed=175, name="Saturn SL/2"};
+    struct car saturn = {.speed=175, .name="Saturn SL/2"};
 
     // Passing a pointer to this struct car along with a new price
     set_price(&saturn, 788.99);
