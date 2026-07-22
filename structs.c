@@ -53,12 +53,14 @@ struct car {
     int speed;
 
 };
-void set_price(struct car *c, float new_price) {
-    // (*c)price = new_price; // works but a bit complex
+// void set_price(struct car *c, float new_price) {
+//     // (*c)price = new_price; // works but a bit complex
 
-    // the line above is 100% equivvalent to the one below
-    c->price = new_price; 
-}
+//     // the line above is 100% equivvalent to the one below
+//     c->price = new_price; 
+// }
+
+void set_price(struct car *c, float new_price)
 int main() {
     struct car saturn = {.speed=175, .name="Saturn SL/2"};
 
