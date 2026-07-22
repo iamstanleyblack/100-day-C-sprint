@@ -53,7 +53,12 @@ struct car {
     int speed;
 
 };
+void set_price(struct car *c, float new_price) {
+    // (*c)price = new_price; // works but a bit complex
 
+    // the line above is 100% equivvalent to the one below
+    c->price = new_price; 
+}
 int main() {
     struct car saturn = {.speed=175, .name="Saturn SL/2"};
 
@@ -61,3 +66,6 @@ int main() {
     set_price(&saturn, 788.99);
     printf("Price: %f\n", saturn.price);
 }
+
+// Arrow Operator
+arrow operator help refer to fields in pointers to structs
