@@ -44,7 +44,6 @@ struct car saturn = {.speed=175, .name="Saturn SL/2"};
 
 //Passing structs to functions
 
-*/
 #include<stdio.h>
 
 struct car {
@@ -71,3 +70,8 @@ int main() {
 
 // Arrow Operator
 // arrow operator help refer to fields in pointers to structs
+
+
+// Copying and Returning structs
+
+*/
