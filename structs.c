@@ -73,5 +73,9 @@ int main() {
 
 
 // Copying and Returning structs
-
+to copy struct, just assign from one to the other!
+struct car a, b;
+b = a; // this copies the struct
+//Comparing structs
+to c
 */
