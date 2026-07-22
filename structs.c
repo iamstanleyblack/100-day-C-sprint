@@ -42,5 +42,6 @@ If soeone changes the order in the struct car, it could break all the other code
 we can also just be more specific by using
 struct car saturn = {.speed=175, .name="Saturn SL/2"};
 
-//
+//Passing structs to functions
+
 */
