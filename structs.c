@@ -45,3 +45,19 @@ struct car saturn = {.speed=175, .name="Saturn SL/2"};
 //Passing structs to functions
 
 */
+#include<stdio.h>
+
+struct car {
+    char *name;
+    float price;
+    int speed;
+
+};
+
+int main() {
+    struct car saturn = {.speed=175, name="Saturn SL/2"};
+
+    // Passing a pointer to this struct car along with a new price
+    set_price(&saturn, 788.99);
+    printf("Price: %f\n", saturn.price);
+}
