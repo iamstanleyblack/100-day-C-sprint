@@ -22,5 +22,23 @@ printf("Price(USD):     %f\n", saturn.price);
 printf("Top Speed (km):     %d\n", saturn.speed);
 
 // Struct Initializers
-We can do 
+the better way to initialize a struct variable is by putting values in for the fields in the order they appear in the struct when you define the variable
+
+
+struct car {
+char *name;
+float price;
+int speed;
+};
+
+// Now eith an initializer we use sam field order as in the struct declaration:
+struct car saturn = {"Saturn SL/2", 16000.99, 175};
+
+printf("Name:   %s\n", saturn.name);
+printf("Price:      %f\n", saturn.price);
+printf("Top Speed:      %d km\n", saturn.speed);
+If soeone changes the order in the struct car, it could break all the other code since the fields heere in the initializer need to be in the same order
+
+we can also just be more specific by using
+struct car saturn = {.speed=175, .name="Saturn SL/2"};
 */
