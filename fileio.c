@@ -48,7 +48,6 @@ int main()
 //EOF
 // There is a special character defined as a macro: EOF. THis is wha the fgetc() will return when the end of the file has been reached and you've attempted to read another character
 
-*/
 
 
 #include<stdio.h>
@@ -83,3 +82,6 @@ int main()
 
     
 }
+
+To read an entire line at once, we use fgets() instead of fgetc(). For arguments, it takes a pointer to a char to hold bytes, a maxumum number of bytes to read and FILE* to read from
+*/
