@@ -63,6 +63,13 @@ int main()
     int c = fgetc(fp);       // This reads as ignle character
     // Why did we use int c instead of a char c?
     //fgetc() is to get a character from the stream
+    int c = fgetc(fp);    
+    int c = fgetc(fp);    
+    int c = fgetc(fp);    
+    int c = fgetc(fp);    
+    int c = fgetc(fp);    
+    int c = fgetc(fp);    
+    int c = fgetc(fp);    
     printf("%c\n%c\n", c);      // This prints char to the stdout
 
 
