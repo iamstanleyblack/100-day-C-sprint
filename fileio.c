@@ -17,4 +17,14 @@ Streams are categorized into two:
 1. text
 2. binary
 Text files are logicaly a sequence of lines separatd by newlines. To be portable, your input data should always end with a newline
+NB:/- A general rule is that if you are able to edit the file in a regular text editor, it's a text file. Otherwise, it's binary.
+How do we open a file and pput text in it? Check below :)
 */
+#include<stdio.h>
+
+int main()
+{
+    FILE *fp;   // Variable torepresent open file
+
+    fp = fopen("hello.txt", r)
+}
