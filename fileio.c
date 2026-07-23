@@ -12,5 +12,9 @@ stderr      -       Standard Error, generally the screen by default
     AND
 // fprintf(stdout, "Hello World!\n"); // this perfoms printf to a file
     ARE THE SAME
-
+//Reading Text files
+Streams are categorized into two:
+1. text
+2. binary
+Text files are logicaly a sequence of lines separatd by newlines. To be portable, your input data should always end with a newline
 */
