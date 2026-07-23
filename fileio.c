@@ -25,13 +25,19 @@ How do we open a file and pput text in it? Check below :)
 int main()
 {
     FILE *fp;   // Variable torepresent open file
-
+    //fopen() returns the FILE* to us so we can use it later
     fp = fopen("hello.txt", "r");       // This opens the file for reading
+    // The 'r' means 'open a text stream for reading'
 
     int c = fgetc(fp);       // This reads as ignle character
+    // Why did we use int c instead of a char c?
+    //fgetc() is to get a character from the stream
 
     printf("%c\n", c);      // This prints char to the stdout
 
 
     fclose(fp);         // This closes te file when done
+    //We close the stream when we are done with it. All streams are automatically closed when the program exits but it is a good form and good housekeeping ie it is strongly advised to explicitly close any files yourself when done with it
+
+    // FILE* keeps track of our position in the file so subsequent calls to fgetc() would get the next character in the file, and then next, until the end
 }
