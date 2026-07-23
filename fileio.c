@@ -26,5 +26,12 @@ int main()
 {
     FILE *fp;   // Variable torepresent open file
 
-    fp = fopen("hello.txt", r)
+    fp = fopen("hello.txt", "r");       // This opens the file for reading
+
+    int c = fgetc(fp);       // This reads as ignle character
+
+    printf("%c\n", c);      // This prints char to the stdout
+
+
+    fclose(fp);         // This closes te file when done
 }
