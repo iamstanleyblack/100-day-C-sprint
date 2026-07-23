@@ -84,4 +84,26 @@ int main()
 }
 
 To read an entire line at once, we use fgets() instead of fgetc(). For arguments, it takes a pointer to a char to hold bytes, a maxumum number of bytes to read and a FILE* to read from. It wil return a NULL on end-of-file error. 
+
+
+// Below is program to read a file line by line and to print the number first before priting the line
+
+
 */
+
+#include<stdio.h>
+
+int main()
+{
+    FILE *fp;
+    char s[1024]; // THis is big enough for any line this program will encounter
+
+    int linecounter = 0; // We initalize it to 0 at first
+
+    fp = fopen("quote.txt", "r");
+    while(fgets(s, sizeof s, fp) != NULL){
+        printf("%d: %s", ++linecounter, s);
+    }
+
+    fclose(fp);
+}
