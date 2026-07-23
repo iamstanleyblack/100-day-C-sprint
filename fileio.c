@@ -83,5 +83,5 @@ int main()
     
 }
 
-To read an entire line at once, we use fgets() instead of fgetc(). For arguments, it takes a pointer to a char to hold bytes, a maxumum number of bytes to read and FILE* to read from
+To read an entire line at once, we use fgets() instead of fgetc(). For arguments, it takes a pointer to a char to hold bytes, a maxumum number of bytes to read and a FILE* to read from. It wil return a NULL on end-of-file error. 
 */
