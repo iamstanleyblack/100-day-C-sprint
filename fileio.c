@@ -140,3 +140,17 @@ in file whale.txt having whales with names, length in metres and weight in tonne
 
     //writing a simple program that outputs a file output.txt
         */
+
+
+        #include<stdio.h>
+        int main() 
+        {
+            FILE *fp;
+            int x = 32;
+
+            fp = fopen("output.txt", "w");
+
+            fputc('B', fp);
+            fputc('\n', fp);
+            
+        }
