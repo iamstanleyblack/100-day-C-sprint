@@ -182,7 +182,6 @@ in file whale.txt having whales with names, length in metres and weight in tonne
         //Binary File I/O
         Binary files/binary streams work similart t text files, except the i/o subsystem doesnt perform any translations on the data like it might with a text file. With binary files, we one gets a raw stream of bytes and that's all. Also, in opening the file in binary, we add "b" to the mode, that is, to read a binary file, we open it in "rb" mode. To write a file, we open it in "wb" mode
 
-                        */
 #include<stdio.h>
 int main() 
 {
@@ -202,3 +201,27 @@ int main()
 
     fclose(fp);
 }
+
+
+We can then read the binary file in using a different program. Here, we will open the file for inary reading ("rb", mode) and will read the bytes one at a time in a loop
+fread has a feature where it returns the number of bytes read,or 0 on the EOF 
+
+
+                        #include<stdio.h>
+                        int main()
+                        {
+                            FILE *fp;
+                            unsigned char c;
+
+                            fp = fopen("output.bin", "rb");
+
+                            while(fread(&c, sizeof(char), 1, fp) > 0)
+                            {
+                                printf("%d\n", c);
+                            }
+
+                            fclose(fp);
+                        }
+                            // We can see the original numbers
+
+                                                */
