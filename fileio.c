@@ -179,6 +179,6 @@ in file whale.txt having whales with names, length in metres and weight in tonne
             fclose(fp);
         }
 
-        
+        //
 
                         */
