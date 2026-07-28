@@ -139,7 +139,6 @@ in file whale.txt having whales with names, length in metres and weight in tonne
     
 
     //writing a simple program that outputs a file output.txt
-        */
 
 
         #include<stdio.h>
@@ -157,3 +156,9 @@ in file whale.txt having whales with names, length in metres and weight in tonne
 
             fclose(fp);
         }
+
+        NB:/- We can also replace line 151 with a simple fp = stdout; instead of the whole             fp = fopen("output.txt", "w");
+
+
+
+                */
