@@ -183,3 +183,22 @@ in file whale.txt having whales with names, length in metres and weight in tonne
         Binary files/binary streams work similart t text files, except the i/o subsystem doesnt perform any translations on the data like it might with a text file. With binary files, we one gets a raw stream of bytes and that's all. Also, in opening the file in binary, we add "b" to the mode, that is, to read a binary file, we open it in "rb" mode. To write a file, we open it in "wb" mode
 
                         */
+#include<stdio.h>
+int main() 
+{
+    FILE *fp;
+    unsigned char bytes[6] = {5, 37, 0, 88, 255, 12};
+
+    fp = fopen("output.bin", "wb"); // wb mode for "write binary"
+
+    //The arguments in the call to fwrite are:
+    // Pointer to data to write
+    // Size of each "piece of data
+    // Count of each "piece" of data
+    // FILE*
+
+
+    fwrite(bytes, sizeof(char), 6, fp);
+
+    fclose(fp);
+}
