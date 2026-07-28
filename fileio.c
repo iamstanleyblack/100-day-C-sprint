@@ -161,7 +161,6 @@ in file whale.txt having whales with names, length in metres and weight in tonne
 
 
 
-                */
 
                         #include<stdio.h>
         int main() 
@@ -169,12 +168,17 @@ in file whale.txt having whales with names, length in metres and weight in tonne
             FILE *fp;
             int x = 32;
 
-            fp = stdout
+            fp = fopen("output.txt", "w");
 
             fputc('B', fp);
             fputc('\n', fp);
             fprintf(fp, "x = %d\n", x);
             fputs("Hello, world!\n", fp);
+            fputs("Welcome to the new world\n", fp);
 
             fclose(fp);
         }
+
+        
+
+                        */
