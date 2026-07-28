@@ -179,6 +179,7 @@ in file whale.txt having whales with names, length in metres and weight in tonne
             fclose(fp);
         }
 
-        //
+        //Binary File I/O
+        Binary files/binary streams work similart t text files, except the i/o subsystem doesnt perform any translations on the data like it might with a text file. With binary files, we one gets a raw stream of bytes and that's all. Also, in opening the file in binary, we add "b" to the mode, that is, to read a binary file, we open it in "rb" mode. To write a file, we open it in "wb" mode
 
                         */
