@@ -225,5 +225,6 @@ fread has a feature where it returns the number of bytes read,or 0 on the EOF
                             // We can see the original numbers
 
 // struct and number
-
+the compiler is free to add padding to a strcut as it sees fit. and different compilers might do this differently. and the same compiler on different   architectures could also do it differently. and the same compiler on the sae architectures could also do it differently
+It is not portable to just fwrite() an entire struct out to a file when you don't know where the padding will end up
   */
