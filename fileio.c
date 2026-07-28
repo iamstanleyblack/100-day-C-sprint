@@ -123,7 +123,7 @@ in file whale.txt having whales with names, length in metres and weight in tonne
         char name[1024];
         float length;
         int mass;
-        fp = fopen("whale.txt", "r");
+        fp = fopen("whales.txt", "r");
 
         while(fscanf(fp, "%s %f %d", name, &length, &mass) != EOF)
         {
