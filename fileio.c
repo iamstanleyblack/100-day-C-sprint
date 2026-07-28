@@ -112,4 +112,6 @@ int main()
 
 The same way we get formatted output with printf(), fprintf is also used for output in a file. and we can also use fscanf() for storage
 scanf()-style functions can be hazardous with untrusted input. If we don't specify field widths with our %d then we can overflow the buffer. Moreover, numeric conversion result in may result in undefined behaviour. It is therefore ssafer to use %s with a field width of untrusted input and then use strol() or strtod() to do the conversions.
+
+in file whale.txt having whales with names, length in metres and weight in tonnes
     */
