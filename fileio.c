@@ -224,4 +224,6 @@ fread has a feature where it returns the number of bytes read,or 0 on the EOF
                         }
                             // We can see the original numbers
 
-                                                */
+// struct and number
+
+  */
