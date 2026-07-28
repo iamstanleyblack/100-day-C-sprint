@@ -113,5 +113,22 @@ int main()
 The same way we get formatted output with printf(), fprintf is also used for output in a file. and we can also use fscanf() for storage
 scanf()-style functions can be hazardous with untrusted input. If we don't specify field widths with our %d then we can overflow the buffer. Moreover, numeric conversion result in may result in undefined behaviour. It is therefore ssafer to use %s with a field width of untrusted input and then use strol() or strtod() to do the conversions.
 
-in file whale.txt having whales with names, length in metres and weight in tonnes
+in file whale.txt having whales with names, length in metres and weight in tonnes, we could read these with fgets() and then parse the string with sscanf() as that is more resilient against corrupted files. However, Im Gonna use fscanf() 
     */
+
+    #include<stdio.h>
+    int main()
+    {
+        FILE *fp;
+        char name[1024];
+        float length;
+        int mass;
+        fp = fopen("whale.txt", "r");
+
+        while(fscanf(fp, "%s %f %d", name, &length, &mass) != EOF)
+        {
+            printf("%s whale, %d tonnes, %.1f meters\n", name, mass, length);
+        }
+
+        fclose(fp);
+    }
