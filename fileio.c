@@ -192,10 +192,10 @@ int main()
     fp = fopen("output.bin", "wb"); // wb mode for "write binary"
 
     //The arguments in the call to fwrite are:
-    // Pointer to data to write
-    // Size of each "piece of data
-    // Count of each "piece" of data
-    // FILE*
+    // Pointer to data to write(bytes)
+    // Size of each "piece of data(sizeof(char)
+    // Count of each "piece" of data(6)
+    // FILE* (fp)
 
 
     fwrite(bytes, sizeof(char), 6, fp);
