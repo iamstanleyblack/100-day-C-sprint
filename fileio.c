@@ -133,4 +133,10 @@ in file whale.txt having whales with names, length in metres and weight in tonne
     }
 
 
+    we can use fgetc(), fget() and fscaf() to read text streams. we can use fputc(), fputs() and fprintf() to write text streams
+
+    to do the writing, we have to fopen() the file in write mode by passing "w" as the second argument. Opening an existing file in "w" will instantly truncate that file to 0 bytes for a full overwrite.
+    
+
+    //writing a simple program that outputs a file output.txt
         */
