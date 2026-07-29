@@ -24,6 +24,29 @@ typedef struct animal {
 char *name;
 int leg-count;
 int speed;
-}
+} animal; // we now refer to the whole struct as 'animal'
 
+struct animal y; // this will work
+animal z; // this also works
+
+// ANONYMOUS STRUCTURE
+
+typedef struct {
+char *name;
+int leg_count;
+int speed;
+} animal; // new name
+
+animal z; // this alwo works
+
+// WE CAN ALSO DO THIS:
+ 
+typedef struct {
+int x;
+int y;
+} point;
+
+point p = {.x=20, .y=40};
+
+printf("%d, %d\n", p.x, p.y);
 */
