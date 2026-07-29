@@ -20,4 +20,10 @@ typedef struct animal animal;
 struct animal y; // this will work
 anial z; // this will also work because 'animal' is just an alias
 
+typedef struct animal {
+char *name;
+int leg-count;
+int speed;
+}
+
 */
