@@ -50,4 +50,12 @@ point p = {.x=20, .y=40};
 
 printf("%d, %d\n", p.x, p.y);
 
+// we can also use typedef to change the type of a variable to another type
+typedef float app_float;
+app_float f1, f2, f3; // everything ere is now a floating point
+
+//If we later wnat to change the type of all those variables above, we jsut need to change the typedef we made at the top as follows
+
+typedef long double app_float;
+app_float f1, f2, f3; // Now all these become long doubles
 */
