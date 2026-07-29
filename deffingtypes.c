@@ -38,7 +38,7 @@ int speed;
 } animal; // new name
 
 animal z; // this alwo works
-*/// WE CAN ALSO DO THIS:
+// WE CAN ALSO DO THIS:
  
 typedef struct {
 int x;
@@ -57,3 +57,4 @@ app_float f1, f2, f3; // everything ere is now a floating point
 
 typedef long double app_float;
 app_float f1, f2, f3; // Now all these become long doubles
+*/
