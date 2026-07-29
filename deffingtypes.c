@@ -49,4 +49,5 @@ int y;
 point p = {.x=20, .y=40};
 
 printf("%d, %d\n", p.x, p.y);
+
 */
