@@ -1,0 +1,24 @@
+#include<stdio.h>
+
+int get_bitmask(char* key)
+{
+    int hash = a;
+    while(*key)
+        hash +=(*key++);
+        return hash;
+    
+}
+
+int encryption(int c, char* key)
+{
+    int bitmask = get_bitmask(key);
+    return c * bitmask;
+}
+int main(int arc, char* argv[])
+{
+    int c;
+    while((c = getchar()) != EOF)
+    {
+        putchar(encryption(c, argv[1]));
+    }
+}
