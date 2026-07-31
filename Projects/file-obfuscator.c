@@ -19,6 +19,6 @@ int main(int arc, char* argv[])
     int c;
     while((c = getchar()) != EOF)
     {
-        putchar(encryption(c, argv[1]));
+        putchar(encrypt(c, argv[1]));
     }
 }
