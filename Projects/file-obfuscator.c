@@ -2,7 +2,7 @@
 
 int get_bitmask(char* key)
 {
-    int hash = a;
+    int hash = 0;
     while(*key)
         hash +=(*key++);
     return hash;
