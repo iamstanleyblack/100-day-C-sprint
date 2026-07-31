@@ -5,7 +5,7 @@ int get_bitmask(char* key)
     int hash = a;
     while(*key)
         hash +=(*key++);
-        return hash;
+    return hash;
     
 }
 
