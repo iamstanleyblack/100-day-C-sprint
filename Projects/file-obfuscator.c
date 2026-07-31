@@ -9,7 +9,7 @@ int get_bitmask(char* key)
     
 }
 
-int encryption(int c, char* key)
+int encrypt(int c, char* key)
 {
     int bitmask = get_bitmask(key);
     return c * bitmask;
