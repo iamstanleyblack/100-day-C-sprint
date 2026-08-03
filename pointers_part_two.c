@@ -11,5 +11,12 @@ int *p = &a[0];
 printf("%d\n", *p); // this will print 11
 // adding 1 to the pointer will print the next element in the array
 printf("%d\n", *(p + 1));
+// C knows that p is a pointer to an int and so it knows the sizeof an int and it knows to skip that many bytes t get to the next int after the first one
+// Both printf("%d\n", *p); and printf("%d\n", *(p + 0)); will print 11
+printf("%d\n", *(p + 0));
+printf("We are now iterating over the elements of the array.\n")
+for (int i = 0; i < 5; i++) {
+    printf("%d\n", *(p + i));
+}
 }
 
