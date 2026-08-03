@@ -22,5 +22,5 @@ for (int i = 0; i < 5; i++) {
 How does this work?
 the memory is like a big array where byte is stored at each array index. And the array index into memory has a few names like index into memory, location, address, pointer
 ---So a pointer is an index into some memory
-
+eg if we have a number stored at the address/index 23,237, 489, 202... if we have an int pointer to that 3490 then that value of that pointer is also 23,237, 489, 202
 */
