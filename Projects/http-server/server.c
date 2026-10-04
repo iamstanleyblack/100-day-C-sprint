@@ -6,6 +6,33 @@
 // #include<sys/socket.h>
 #include<netdb.h> // i use this for struct addrinfo getinfo()
 #include<string.h> // i use this for memset(), strncmp(), and strlen()
+/*
+                    YOUR PROGRAM
+
+socket()
+   │
+   │ creates
+   ▼
+sockfd
+   │
+   │
+   │ getaddrinfo()
+   │
+   ▼
+res
+   │
+   │ contains
+   ▼
+address information
+   │
+   │
+   │ bind(sockfd, address, address_size)
+   ▼
+┌─────────────────────────┐
+│      My socket          │
+│  127.0.0.1 : 8080       │
+└─────────────────────────┘
+*/
 //***********************//
 // WHAT THIS PROGRAM DOES//
 //***********************//
@@ -61,8 +88,27 @@ int main()
     hint.ai_socktype = SOCK_STREAM;
     hint.ai_flags = AI_PASSIVE;
     getaddrinfo(NULL, "8080", &hint, &res);
+// NULL means this is a server and we have specified iT WITH(AI_PASSIVE), 8080IS THE PORT number. It is a strin and not an integer, that is how getaddrinfo() accepts tit. &hint is the memory address for hint,&res js anothe rmemory address for res.
+/*
+                 getaddrinfo()
+                      │
+          ┌───────────┴───────────┐
+          │                       │
+       INPUT                    OUTPUT
+          │                       │
+        hint                    res
+          │                       │
+ "IPv4 + TCP + passive"     address information
 
+ "bind attaches the socket to a specific local IP address and port
+ getaddrinfo() - I am creating a server
+ I want an IPv4 addrress,
+ for a TCP socket
+ and I intend to uset teh result for binding" - Basically what hint does.
+*/
     int bind_result = bind(sockfd, res->ai_addr,res->ai_addrlen);// sizeof(struct sockaddr));
+    //The '->' operator is used when we have a pointer to a structure and we awnat to access one of its members
+
     if (bind_result < 0)
     {
         perror("Bind error");
