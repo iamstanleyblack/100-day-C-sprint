@@ -7,7 +7,7 @@
 #include<netdb.h> // i use this for struct addrinfo getinfo()
 #include<string.h> // i use this for memset(), strncmp(), and strlen()
 /*
-                    YOUR PROGRAM
+                    
 
 socket()
    │
